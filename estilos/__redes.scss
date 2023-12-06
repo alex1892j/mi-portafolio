@@ -1,0 +1,36 @@
+@use'__commons' as c;
+
+@media (min-width: 260px) {
+    #barra-lateral {
+        display: grid;
+        grid-template-areas: barraLateral;
+
+        .section-redes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 95%;
+            top: 25rem;
+            gap: 1rem;
+            position: fixed;
+            z-index: 160;
+
+            .style-rs {
+                width: 35px;
+                background: #fff;
+                border-radius: 10px;
+            }
+
+            .boton-waspp {
+                width: 45px;
+                font-size: 2.2rem;
+                font-weight: 1000;
+                padding-top: 0.3rem;
+                text-align: center;
+                color: #0df053;
+                background: #fff;
+                border-radius: 40px;
+            }
+        }
+    }
+}

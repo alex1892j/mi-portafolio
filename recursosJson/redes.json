@@ -1,0 +1,13 @@
+[
+    {
+        "linkedin": "recursos/img/linkedin-logo.png",
+        "githup": "recursos/img/github-logo.png",
+        "enlaceGithup":"https://github.com/alex1892j",
+        "enlaceLinkedin":"https://www.linkedin.com/in/alexander-brice%C3%B1o-a61034259/",
+        "tiktok": "recursos/img/tik-tok.png",
+        "wasapp": "<i class='bi bi-whatsapp'></i>",
+        "numWasapp": "https://api.whatsapp.com/send?phone=981545388",
+        "blank": "_blank",
+        "ramdon":"<a href='https://www.flaticon.com/free-icons/github' title='github icons'>Github icons created by Roundicons - Flaticon</a>"
+    }
+]

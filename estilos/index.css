@@ -1,0 +1,282 @@
+:root {
+  --opacity-modal-color: rgb(0, 131, 253, 0.50);
+  --opacity-sub-modal-color: rgba(152, 209, 255, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+#contenedor {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
+  background: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header" "barra-lateral" "sobre-mi" "experiencia" "proyectos";
+}
+
+@media (min-width: 260px) {
+  #header {
+    display: grid;
+    grid-template-areas: header;
+  }
+  #header .seccion-perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  #header .seccion-perfil .imagen-portada {
+    max-width: 100%;
+    box-shadow: 0px -2px 100px var(--opacity-sub-modal-color);
+  }
+  #header .seccion-perfil .artcle-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+  }
+  #header .seccion-perfil .artcle-perfil .imagen-perfil {
+    width: 100px;
+    border-radius: 200px;
+    margin-top: -3rem;
+    margin-left: 0;
+    z-index: 150;
+  }
+  #header .seccion-perfil .artcle-perfil .nombre-perfil {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  #header .seccion-perfil .profecional {
+    width: 80%;
+    font-size: 0.9rem;
+    text-align: right;
+    color: rgb(101, 218, 247);
+    margin-top: -1.5rem;
+  }
+}
+@media (min-width: 500px) {
+  #header {
+    display: grid;
+    grid-template-areas: header;
+  }
+  #header .seccion-perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  #header .seccion-perfil .artcle-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+  }
+  #header .seccion-perfil .artcle-perfil .imagen-perfil {
+    width: 150px;
+    border-radius: 200px;
+  }
+  #header .seccion-perfil .profecional {
+    width: 75%;
+    font-size: 0.9rem;
+    text-align: right;
+    color: rgb(101, 218, 247);
+    margin-top: -3.5rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  #header {
+    display: grid;
+    grid-template-areas: header;
+  }
+  #header .seccion-perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  #header .seccion-perfil .profecional {
+    width: 68%;
+    font-size: 0.9rem;
+    text-align: right;
+    color: rgb(101, 218, 247);
+    margin-top: -3.5rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 260px) {
+  #barra-lateral {
+    display: grid;
+    grid-template-areas: barraLateral;
+  }
+  #barra-lateral .section-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 95%;
+    top: 25rem;
+    gap: 1rem;
+    position: fixed;
+    z-index: 160;
+  }
+  #barra-lateral .section-redes .style-rs {
+    width: 35px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  #barra-lateral .section-redes .boton-waspp {
+    width: 45px;
+    font-size: 2.2rem;
+    font-weight: 1000;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #0df053;
+    background: #fff;
+    border-radius: 40px;
+  }
+}
+@media (min-width: 260px) {
+  #sobre-mi {
+    display: grid;
+    grid-template-areas: sobreMi;
+    width: 80%;
+  }
+  #sobre-mi .artcle-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(56, 55, 55, 0.3882352941);
+  }
+  #sobre-mi .artcle-sobre-mi .h2-sobre-mi {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: #a3e38a;
+  }
+  #sobre-mi .artcle-sobre-mi .p-sobre-mi {
+    font-size: 1rem;
+    color: #fff;
+  }
+  #sobre-mi .artcle-sobre-mi .p-sobre-mi .p-s-1,
+  #sobre-mi .artcle-sobre-mi .p-sobre-mi .p-s-2 {
+    width: 80%;
+    margin: 1rem;
+  }
+}
+@media (min-width: 510px) {
+  #sobre-mi {
+    display: grid;
+    grid-template-areas: sobreMi;
+    width: 90%;
+  }
+  #sobre-mi .artcle-sobre-mi {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 260px) {
+  #proyectos {
+    display: grid;
+    grid-template-areas: proyectos;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  #proyectos .article-proyecto-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  #proyectos .article-proyecto-style .h2-proyecto-style {
+    color: #a3e38a;
+    margin-left: 0.1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: rgba(56, 55, 55, 0.3882352941);
+    text-align: center;
+  }
+  #proyectos .article-proyecto-style .figure-proyecto-style {
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(56, 55, 55, 0.3882352941);
+    max-width: 250px;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  #proyectos .article-proyecto-style .figure-proyecto-style .figcation-proyecto-style {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: rgb(101, 218, 247);
+    width: 100%;
+  }
+  #proyectos .article-proyecto-style .figure-proyecto-style .img-proyecto-style {
+    width: 200px;
+  }
+  #proyectos .article-proyecto-style .figure-proyecto-style .descripcion-proyecto-style {
+    margin: 0.5rem;
+    color: #fff;
+    text-align: justify;
+  }
+}
+@media (min-width: 510px) {
+  #proyectos {
+    display: grid;
+    grid-template-areas: proyectos;
+    width: 90%;
+  }
+  #proyectos .article-proyecto-style .figure-proyecto-style {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 260px) {
+  #experiencia {
+    display: grid;
+    grid-template-areas: experiencia;
+    width: 80%;
+  }
+  #experiencia .art-experiencia-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 380px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    background: rgba(56, 55, 55, 0.3882352941);
+  }
+  #experiencia .art-experiencia-style .h2-experiencia-style {
+    color: #a3e38a;
+    margin: 2rem;
+  }
+  #experiencia .art-experiencia-style .p-experiencia-style {
+    color: #fff;
+    padding: 1rem;
+  }
+}
+@media (min-width: 510px) {
+  #experiencia {
+    display: grid;
+    grid-template-areas: experiencia;
+    width: 90%;
+  }
+  #experiencia .art-experiencia-style {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=index.css.map */

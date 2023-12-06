@@ -1,0 +1,78 @@
+@use'__commons' as c;
+
+@media (min-width: 260px){
+    #proyectos{
+        display: grid;
+        grid-template-areas: proyectos;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+
+        .article-proyecto-style{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 4rem;
+            margin-left: 2rem;
+           
+
+
+            .h2-proyecto-style{
+                color: #a3e38a;
+                margin-left: 0.1rem;
+                margin-bottom: 2rem;
+                padding: 0.5rem;
+                border-radius: 10px;
+                background: #38373763;
+                text-align: center;
+            }
+
+            .figure-proyecto-style{
+
+                padding: 1rem;
+                border-radius: 10px;
+                background: #38373763;
+                max-width: 250px;
+                margin-bottom: 4rem;
+                text-align: center;
+
+                .figcation-proyecto-style{
+                    margin: 1rem;
+                    font-size: 1.2rem;
+                    color: c.$border-color;
+                    width: 100%;
+                                       
+                }
+
+                .img-proyecto-style{
+                    width: 200px;
+                 
+                }
+
+                .descripcion-proyecto-style{
+                    margin: 0.5rem;
+                    color: #fff; 
+                    text-align: justify;   
+                }
+
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 510px){
+    #proyectos{
+        display: grid;
+        grid-template-areas: proyectos;
+        width: 90%;
+    
+        .article-proyecto-style{
+            .figure-proyecto-style{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

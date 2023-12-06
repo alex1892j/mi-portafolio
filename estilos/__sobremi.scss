@@ -1,0 +1,56 @@
+@use'__commons' as c;
+
+@media (min-width: 260px) {
+    #sobre-mi {
+        display: grid;
+        grid-template-areas: sobreMi;
+        width: 80%;
+       
+        
+        .artcle-sobre-mi {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            margin-top: 6rem;
+            margin-left: 2rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background: #38373763;
+            
+            .h2-sobre-mi {
+                font-size: 1.5rem;
+                margin: 2rem;
+                color: #a3e38a;
+            }
+
+            .p-sobre-mi {
+                font-size: 1rem;
+            
+                color: #fff;
+
+
+                .p-s-1,
+                .p-s-2 {
+                    width: 80%;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 510px){
+
+    #sobre-mi{
+        display: grid;
+        grid-template-areas: sobreMi;
+        width: 90%;
+    
+        .artcle-sobre-mi{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    
+    }
+}

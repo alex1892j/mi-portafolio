@@ -1,0 +1,40 @@
+$border-color: rgb(101, 218, 247);
+$titulos-color: rgb(9, 9, 189);
+$fondo-color: rgb(0, 0, 0);
+
+:root {
+    --opacity-modal-color: rgb(0, 131, 253, 0.50);
+    --opacity-sub-modal-color: rgba(152, 209, 255, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#contenedor {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+    background: $fondo-color;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+
+        "header"
+        "barra-lateral"
+        "sobre-mi"
+        "experiencia"
+        "proyectos"
+
+    ;
+}
+

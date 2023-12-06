@@ -1,0 +1,51 @@
+@use'__commons' as c;
+
+
+@media (min-width: 260px){
+
+    #experiencia{
+        display: grid;
+        grid-template-areas: experiencia;
+        width: 80%;
+
+
+        .art-experiencia-style{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 380px;
+            margin-top: 4rem;
+            margin-left: 2rem;
+            border-radius: 10px;
+            background: #38373763;
+
+            .h2-experiencia-style{
+                color: #a3e38a;
+                margin: 2rem;
+            }
+
+            .p-experiencia-style{
+            
+                color: #fff;
+                padding: 1rem;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 510px){
+
+    #experiencia{
+        display: grid;
+        grid-template-areas: experiencia;
+        width: 90%;
+    
+        .art-experiencia-style{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    
+    }
+}
