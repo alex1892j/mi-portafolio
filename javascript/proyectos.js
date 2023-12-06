@@ -8,7 +8,7 @@ const d = document,
     $figcationProyecto = d.createElement('figcaption'),
     $descripcionProyecto = d.createElement('p'),
     $enlaceProyecto = d.createElement('a'),
-    data = await fetch('./recursosjson/proyectos.json'),
+    data = await fetch('./recurso/proyectos.json'),
     $datosProyecto = await data.json();
 
 $datosProyecto.forEach( el => {

@@ -4,7 +4,7 @@ const d = document,
     $sobreMiArtcle = d.createElement('article'),
     $h2SobreMi = d.createElement('h2'),
     $parrafoSobreMi = d.createElement('p'),
-    $jsonSobreMi = await fetch('./recursosjson/sobremi.json'),
+    $jsonSobreMi = await fetch('./recurso/sobremi.json'),
     datosSobreMi = await $jsonSobreMi.json();
 
 datosSobreMi.forEach(el => {

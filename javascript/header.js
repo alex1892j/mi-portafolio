@@ -7,7 +7,7 @@ const d = document,
     $nombrePerfil = d.createElement('h1'),
     $proPerfil = d.createElement('p'),
     $fragmentaciones = d.createDocumentFragment(),
-    $per = await fetch('./recursosjson/heder.json'),
+    $per = await fetch('./recurso/heder.json'),
     dataperfil = await $per.json();
 
 dataperfil.forEach(el => {

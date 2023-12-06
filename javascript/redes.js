@@ -9,7 +9,7 @@ const d = document,
     $linkedin = d.createElement('a'),
     $githup = d.createElement('a'),
     $tiktok = d.createElement('a'),
-    $sociales = await fetch('./recursosjson/redes.json'),
+    $sociales = await fetch('./recurso/redes.json'),
     $datosRedes = await $sociales.json();
 
 $datosRedes.forEach(el => {
@@ -20,7 +20,7 @@ $datosRedes.forEach(el => {
     $githup.setAttribute('href', el.enlaceGithup);
     $githup.setAttribute('target', el.blank);
     $iconoTiktok.setAttribute('src', el.tiktok);
-    //$tiktok.setAttribute('href');
+    
     $tiktok.setAttribute('target', el.blank);
     $iconoWasapp.setAttribute('href', el.numWasapp);
     $iconoWasapp.setAttribute('target', el.blank);

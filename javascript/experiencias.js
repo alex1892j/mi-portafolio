@@ -4,7 +4,7 @@ $fragmentoExperiencia = d.createDocumentFragment(),
 $experienciaArticle = d.createElement('article'),
 $h2Experiencia = d.createElement('h2'),
 $parrafoExperiencia = d.createElement('p'),
-exp = await fetch('./recursosjson/experiencia.json'),
+exp = await fetch('./recurso/experiencia.json'),
 datosExperiencia = await exp.json();
 
 datosExperiencia.forEach( el => {
