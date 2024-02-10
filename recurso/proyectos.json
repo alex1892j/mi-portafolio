@@ -1,12 +1,31 @@
-[
+[   
+    
     {
-        "h2Proyectos":"proyectos",
-        "imgPorfolioUgc":"recursos/img/linkedin.png",
+       "id":"001",
+        "img":"recursos/img/linkedin.png",
         "pProyectos":"Desarrollo de portafolio, adaptable a todo tipo de dispositivos, este sitio ha sido programado con código 100% nativo (sin framework ni librerías). El diseño responsive se logró mediante el uso del preprocesador SASS de CSS aplicando GRID y FLEXBOX",
-        "tituloFigcation":"Portafolio UGC",
-        "btn":"<button>Ver proyecto</button>",
+        "titletarget":"Portafolio UGC",
         "link":"https://alex1892j.github.io/porfolio-ugc/",
         "blank": "_blank",
         "randon":"<a href='https://www.flaticon.com/free-icons/github' title='github icons'>Github icons created by Roundicons - Flaticon</a>"      
-    }
+    },
+    {
+        "id":"002",
+         "img":"recursos/img/tienda.jpg",
+         "pProyectos":"Desarrollo de portafolio, adaptable a todo tipo de dispositivos, este sitio ha sido programado con código 100% nativo (sin framework ni librerías). El diseño responsive se logró mediante el uso del preprocesador SASS de CSS aplicando GRID y FLEXBOX",
+         "titletarget":"Tienda virtual",
+         "link":"https://alex1892j.github.io/porfolio-ugc/",
+         "blank": "_blank",
+         "randon":"<a href='https://www.flaticon.com/free-icons/github' title='github icons'>Github icons created by Roundicons - Flaticon</a>"      
+    },
+    {
+        "id":"003",
+         "img":"recursos/img/fan.jpg",
+         "pProyectos":"Desarrollo de portafolio, adaptable a todo tipo de dispositivos, este sitio ha sido programado con código 100% nativo (sin framework ni librerías). El diseño responsive se logró mediante el uso del preprocesador SASS de CSS aplicando GRID y FLEXBOX",
+         "titletarget":"Fanpague",
+         "link":"https://alex1892j.github.io/porfolio-ugc/",
+         "blank": "_blank",
+         "randon":"<a href='https://www.flaticon.com/free-icons/github' title='github icons'>Github icons created by Roundicons - Flaticon</a>"      
+     }
+   
 ]

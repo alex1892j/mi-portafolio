@@ -1,6 +1,7 @@
 import $experiencia from "./experiencias.js";
+import $habilidad from "./habilidad.js";
 import $headerPerfil from "./header.js";
-import $proyecto from "./proyectos.js";
+import $artproyecto from "./proyectos.js";
 import $asideSection from "./redes.js";
 import $sobreMi from "./sobreMi.js";
 
@@ -12,6 +13,8 @@ d.addEventListener('DOMContentLoaded', (e) => {
     $headerPerfil
     $asideSection
     $sobreMi
-    $proyecto
+    $habilidad
+    $artproyecto
     $experiencia
+
 })

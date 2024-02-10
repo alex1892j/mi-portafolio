@@ -46,6 +46,8 @@
                 text-align: right;
                 color: c.$border-color;
                 margin-top: -1.5rem;
+                margin-right: 2rem;
+
             }
 
 
@@ -75,10 +77,13 @@
                 .imagen-perfil {
                     width: 150px;
                     border-radius: 200px;
-                   
+                    margin-top: -6rem;
                 }
 
-
+                .nombre-perfil {
+                    font-size: 1.8rem;
+                    
+                }
 
             }
 
@@ -87,7 +92,7 @@
                 font-size: 0.9rem;
                 text-align: right;
                 color: c.$border-color;
-                margin-top: -3.5rem;
+                margin-top: -2rem;
                 margin-right: 2rem;
             }
         }
@@ -98,17 +103,31 @@
     #header {
         display: grid;
         grid-template-areas: header;
+        .imagen-portada {
+            height: 35vh;
+        }
 
         .seccion-perfil {
             display: flex;
             flex-direction: column;
-    
+           
+            .artcle-perfil {
+                max-width: 600px;
+                padding: 1rem;
+                .imagen-perfil {
+                    width: 200px;
+                    border-radius: 200px;   
+                    margin-top: -8rem;
+                    margin-left: 4rem;
+
+                }
+            }
             .profecional {
-                width: 68%;
+                max-width: 500px;
                 font-size: 0.9rem;
                 text-align: right;
                 color: c.$border-color;
-                margin-top: -3.5rem;
+                margin-top: -2rem;
                 margin-right: 2rem;
             }
         }
